@@ -3,11 +3,7 @@ import React,{ useRef } from 'react';
 export function App(props) {
   const x = useRef();
   function myFunction() {
-    if (x.current.className === "topnav") {
-      x.current.className += " responsive";
-    } else {
-      x.current.className = "topnav";
-    }
+    x.current.className = (x.current.className === "topnav") ? "topnav responsive" : "topnav";
   }
   return (
     <div className="topnav" id="myTopnav" ref={x}>
