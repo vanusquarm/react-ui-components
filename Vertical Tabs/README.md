@@ -1,1 +1,1 @@
-![](https://github.com/vanusquarm/ReactUI/Vertical%20Tabs/screenshots/image.png)
+![](https://github.com/vanusquarm/ReactUI/screenshots/vertical_tabs.PNG)
