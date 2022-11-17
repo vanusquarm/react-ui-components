@@ -1,33 +1,31 @@
-import React, {useRef } from 'react';
+import React, {useEffect} from 'react';
 
 export function App(props) {
-  const _default = useRef();
-  //_default.current.style.display = "block";
-  function openCity(evt) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-    tabcontent[i].style.display = "none";
+  var i, tabcontent, tablinks, getCName;
+  function openCity(evt, cityName) {
+  
+    [...tabcontent].map((item) => item.style.display = "none");
+    [...tablinks].map((item) => item.className = item.className.replace(" active", ""))
+    getCName(cityName);
+    evt.currentTarget.className += " active";
   }
-  tablinks = document.querySelectorAll(".tablinks li");
-  for (i = 0; i < tablinks.length; i++) {
-    tablinks[i].className = tablinks[i].className.replace(" active", "");
-  }
-  document.getElementById(evt.currentTarget.innerText).style.display = "block";
-  evt.currentTarget.className += " active";
-}
+
+  useEffect(() => {
+      tabcontent = document.getElementsByClassName("tabcontent");
+      tablinks = document.getElementsByClassName("tablinks");
+      getCName = (CName) => {
+        return document.getElementById(CName).style.display = "block";
+      }
+      document.getElementById("defaultOpen").click();
+    }
+    ,[])
+
   return (
     <>
       <div className="tab">
-        <ul className="tablinks">
-          <li  onClick={openCity}>London</li>
-          <li  onClick={openCity}>Paris</li>
-          <li  onClick={openCity}>Tokyo</li>
-        </ul>
-      </div>
-
-      <div id="default" ref={_default} className="tabcontent">
-        <p style={{textAlign: "center"}}>Select conversation to start chatting</p>
+        <button className="tablinks" onClick={(e) => openCity(e, "London")} id="defaultOpen">London</button>
+        <button className="tablinks" onClick={(e) => openCity(e, "Paris")}>Paris</button>
+        <button className="tablinks" onClick={(e) => openCity(e, "Tokyo")}>Tokyo</button>
       </div>
 
       <div id="London" className="tabcontent">
@@ -44,7 +42,6 @@ export function App(props) {
         <h3>Tokyo</h3>
         <p>Tokyo is the capital of Japan.</p>
       </div>
-
     </>
   );
 }
