@@ -1,5 +1,5 @@
 import React, {useRef, useEffect} from "react";
-import "./App.css"
+//import "./App.css"
 
 export default function App() {
   //state is managed by redux hence no component state specified
