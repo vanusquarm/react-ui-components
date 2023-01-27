@@ -18,7 +18,11 @@ export function App(props) {
 
   return (
     <div className='App'>
-      
+      <button className="tablink" onClick={e => openPage(e, 'Home', 'red')}>Home</button>
+      <button className="tablink" onClick={e => openPage(e, 'News', 'green')} ref={defaultTab}>News</button>
+      <button className="tablink" onClick={e => openPage(e, 'Contact', 'blue')}>Contact</button>
+      <button className="tablink" onClick={e => openPage(e, 'About', 'orange')}>About</button>
+
       <div id="Home" className="tabcontent">
         <h3>Home</h3>
         <p>Home is where the heart is..</p>
@@ -38,12 +42,6 @@ export function App(props) {
         <h3>About</h3>
         <p>Who we are and what we do.</p>
       </div>
-
-      <button className="tablink" onClick={e => openPage(e, 'Home', 'red')}>Home</button>
-      <button className="tablink" onClick={e => openPage(e, 'News', 'green')} ref={defaultTab}>News</button>
-      <button className="tablink" onClick={e => openPage(e, 'Contact', 'blue')}>Contact</button>
-      <button className="tablink" onClick={e => openPage(e, 'About', 'orange')}>About</button>
-
     </div>
   );
 }
