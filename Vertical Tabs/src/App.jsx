@@ -1,6 +1,6 @@
 import React, {useEffect} from 'react';
 
-export function App(props) {
+export default function App(props) {
   var i, tabcontent, tablinks, getCName;
   function openCity(evt, cityName) {
   
@@ -21,11 +21,11 @@ export function App(props) {
     ,[])
 
   return (
-    <>
+    <div className='container'>
       <div className="tab">
-        <button className="tablinks" onClick={(e) => openCity(e, "London")} id="defaultOpen">London</button>
-        <button className="tablinks" onClick={(e) => openCity(e, "Paris")}>Paris</button>
-        <button className="tablinks" onClick={(e) => openCity(e, "Tokyo")}>Tokyo</button>
+        <li className="tablinks" onClick={(e) => openCity(e, "London")} id="defaultOpen">London</li>
+        <li className="tablinks" onClick={(e) => openCity(e, "Paris")}>Paris</li>
+        <li className="tablinks" onClick={(e) => openCity(e, "Tokyo")}>Tokyo</li>
       </div>
 
       <div id="London" className="tabcontent">
@@ -42,7 +42,7 @@ export function App(props) {
         <h3>Tokyo</h3>
         <p>Tokyo is the capital of Japan.</p>
       </div>
-    </>
+    </div>
   );
 }
 
