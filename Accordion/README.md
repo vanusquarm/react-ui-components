@@ -8,3 +8,5 @@
 
 
 [https://accordion.playcode.io/](https://accordion.playcode.io/)
+<p align="center"> <img src="https://github.com/vanusquarm/react-ui-components/blob/master/Accordion/accordion.PNG" width="375"> </p>
+  
