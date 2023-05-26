@@ -1,5 +1,7 @@
 import React from "react";
-
+/**
+ * Created by sylvan quarm on 6/26/2023.
+ */
 export function App() {
   
   const sections = [
