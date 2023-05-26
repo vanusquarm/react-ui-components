@@ -4,9 +4,7 @@ export function App() {
 
   function clickMe(e){
     e.currentTarget.classList.toggle("active");
-    let panel = e.currentTarget.nextElementSibling;
-    panel.style.display = (panel.style.display === "block")? "none": "block";
- 
+    e.currentTarget.nextElementSibling.classList.toggle("active");
   }
   
     
