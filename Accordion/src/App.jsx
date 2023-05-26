@@ -1,12 +1,13 @@
 import React from "react";
-
+/**
+ * Created by sylvan quarm on 6/26/2023.
+ */
 export function App() {
 
   function clickMe(e){
     e.currentTarget.classList.toggle("active");
     e.currentTarget.nextElementSibling.classList.toggle("active");
   }
-  
     
   return (
   <>            
