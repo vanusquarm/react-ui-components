@@ -1,6 +1,8 @@
 import React from "react";
 import { sections } from "./data";
-
+/**
+ * Created by sylvan quarm on 6/26/2023.
+ */
 function Accordion({sections}) {
 
   function showDetails(e) {
