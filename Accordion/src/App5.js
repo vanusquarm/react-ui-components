@@ -35,8 +35,8 @@ export function App() {
     getSections().then(json => {
       let newSections = json.results.map(result => (
         {"summary": result.name.first, "detail": (result.name.title +" "+ result.name.first +" "+ result.name.last)} 
-      ))
-      setSections([...sections, ...newSections])
+      ));
+      setSections(prevSections => [...prevSections, ...newSections]);
     })}, []);
 
   return (
