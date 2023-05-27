@@ -4,7 +4,8 @@
 - App 2: Creating the Accordion App with dummy data
 - App 3: App Modularization- Creating a separate Accordion component and adding it to the App with data loading from file
 - App 4: Modifying App3 with data fetch from API 
-- App 5: Converting App4 to use Redux store 
+- App 5: Moving the resource fetch function into a separate API file 
+- App 6: Converting App5 to use Redux store 
 
 
 [https://accordion.playcode.io/](https://accordion.playcode.io/)
