@@ -23,10 +23,10 @@ export function App() {
       {sections.map((section, i) => {
           
         return (
-          <>
-            <button key={i} className="accordion" onClick={(e) => showDetails(e)}>{section.summary}</button>
+          <div key={i}>
+            <button className="accordion" onClick={(e) => showDetails(e)}>{section.summary}</button>
             <div className="panel"> <p>{section.detail}</p> </div>
-          </>
+          </div>
         );
       })}
 
