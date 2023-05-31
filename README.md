@@ -1,7 +1,7 @@
 # react-ui-components
 Tempates codes for all react components.
 Test components using https://playcode.io/react.
-The main of objective of this repo is to recreate/replicate 1M react components of 1M sites
+The main of objective of this repo is to recreate/replicate 1M react components of 1M sites without using external libraries
 
 ## contribution
 To contribute to this project, 
