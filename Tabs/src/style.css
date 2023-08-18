@@ -1,0 +1,64 @@
+* {box-sizing: border-box}
+body {
+  font-family: "Lato", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-grow: 1;
+  width: 95vw;
+  max-width: 1200px;
+  max-height: 800px;
+  height: 95vh;
+  background: #FFF;
+}
+
+/* Style the tab */
+.tab {
+  background: #0048AA;
+  border-radius: 10px 0 0 10px;
+  flex-basis: 400px;
+}
+
+/* Style the buttons inside the tab */
+.tab div {
+  display: block;
+  background-color: inherit;
+  color: black;
+  padding: 0;
+  margin:0;
+  width: 100%;
+  border: none;
+  outline: none;
+  text-align: left;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.tab div {
+  list-style-type: none;
+  padding: 22px 16px;
+}
+
+/* Change background color of buttons on hover */
+.tab div:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tab div.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  border-radius: 0 10px 10px 0;
+  flex-grow: 1;
+  padding: 0px 12px;
+  border: 1px solid #ccc;
+  border-left: none;
+  background: #fff;
+}
