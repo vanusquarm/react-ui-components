@@ -4,7 +4,7 @@ import { navigate } from '@reach/router';
  * https://github.com/vanusquarm/react-ui-components
  */
 
-export default function TabSummary({isActive, tab, setSelectedTab}){
+export default function TabHeader({isActive, tab, setSelectedTab}){
     
   function openTab(evt, tabId) {   // alternative: obtain the id from the event object
     navigate(`/cities/${tabId}`); // create a dynamic URL. Alternative: create list items with attached Links (static)

@@ -2,7 +2,7 @@
  * Created by sylvan quarm on 6/26/2023.
  * https://github.com/vanusquarm/react-ui-components
  */
-export default function TabsBody({tabId}){
+export default function TabBody({tabId}){
   // Using the first approach
   const cities = [
     {"id":1,"name":"London","details":"London is the capital tab of England."},
