@@ -3,7 +3,7 @@ import React, { useState } from 'react';
  * Created by sylvan quarm on 6/26/2023.
  * https://github.com/vanusquarm/react-ui-components
  */
-export default function Tabs(props) { // Refactor name to Tab and Tab to TabsHeader
+export default function Tabs(props) { 
 
   const [selectedTab, setSelectedTab] = useState(1);
   
