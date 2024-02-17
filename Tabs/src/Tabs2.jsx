@@ -3,7 +3,7 @@ import React, { useState } from 'react';
  * Created by sylvan quarm on 6/26/2023.
  * https://github.com/vanusquarm/react-ui-components
  */
-export default function Tabs(props) { 
+export default function Tabs(props) { // Refactor name to Tab and Tab to TabsHeader
 
   const [selectedTab, setSelectedTab] = useState(1);
   
@@ -13,8 +13,6 @@ export default function Tabs(props) {
     {"id":2,"name":"Paris","details":"Paris is the capital tab of France."},
     {"id":3,"name":"Tokyo","details":"Tokyo is the capital tab of Japan."}
   ]
-
-  const tab = tabList.filter(tab => tab.id === selectedTab)[0];
 
   return (
  
@@ -27,12 +25,12 @@ export default function Tabs(props) {
         }
       </div>
       
-      <div className="tab-details">
+      <div className="tab-panel">
         
         {<div>
-            <h3>{tab.name}</h3>
-            <p>{tab.details}</p>
-        </div> }
+            <h3>{tabList[selectedTab - 1].name}</h3>
+            <p>{tabList[selectedTab - 1].details}</p>
+        </div>}
       </div>      
       
     </div>
