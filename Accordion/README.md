@@ -7,7 +7,8 @@
 - App 5: Moving the resource fetch function into a separate API file 
 - App 6: Converting App5 to use Redux store 
 
-
+- [Controlled Accordion](https://accordion.playcode.io/v=2)
+  
 [https://accordion.playcode.io/](https://accordion.playcode.io/)
 <p align="center"> <img src="https://github.com/vanusquarm/react-ui-components/blob/master/Accordion/accordion.PNG" width="375"> </p>
   
