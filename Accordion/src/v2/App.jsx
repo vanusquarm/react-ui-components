@@ -6,16 +6,16 @@ import React, {useState, useEffect} from "react";
 
 const items = [
   {
-    title: 'Accordion Item 1',
-    content: 'Content for Accordion Item 1',
+    summary: 'Accordion Item 1',
+    details: 'Content for Accordion Item 1',
   },
   {
-    title: 'Accordion Item 2',
-    content: 'Content for Accordion Item 2',
+    summary: 'Accordion Item 2',
+    details: 'Content for Accordion Item 2',
   },
   {
-    title: 'Accordion Item 3',
-    content: 'Content for Accordion Item 3',
+    summary: 'Accordion Item 3',
+    details: 'Content for Accordion Item 3',
   },
 ];
 
@@ -31,11 +31,11 @@ function Accordion({ items }) {
 
     return (
       <div key={index}>
-        <div className={`title ${isActive}`} onClick={() => onTitleClick(index)}>
-          {item.title}
+        <div className={`summary ${isActive}`} onClick={() => onTitleClick(index)}>
+          {item.summary}
         </div>
-        <div className={`content ${isActive}`}>
-          {item.content}
+        <div className={`details ${isActive}`}>
+          {item.details}
         </div>
       </div>
     );
