@@ -49,7 +49,7 @@ function Accordion({ items }) {
 export function App() {
   return (
     <div>
-      <h1>Accordion Example</h1>
+      <h2> <a href="https://playcode.io/accordion/?v=2">Accordion</a> </h2>
       <Accordion items={items} />
     </div>
   );
