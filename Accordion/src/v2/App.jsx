@@ -41,7 +41,7 @@ function Accordion({ items }) {
     );
   });
 
-  return <div className="accordion">{renderedItems}</div>;
+  return <div className="summary">{renderedItems}</div>;
 }
 
 

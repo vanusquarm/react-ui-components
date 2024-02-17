@@ -1,4 +1,4 @@
-.accordion {
+.summary {
     background-color: #eee;
     color: #444;
     cursor: pointer;
@@ -11,17 +11,17 @@
     transition: 0.4s;
 }
 
-.accordion.active, .accordion:hover {
+.summary.active, .summary:hover {
     background-color: #ccc; 
 }
 
-.panel {
+.details {
     padding: 0 18px;
     display: none;
     background-color: white;
     overflow: hidden;
 }
 
-.panel.active {
+.details.active {
     display: block;
 }

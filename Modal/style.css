@@ -15,13 +15,13 @@
     background-color: #ccc; 
 }
 
-.panel {
+.details {
     padding: 0 18px;
     display: none;
     background-color: white;
     overflow: hidden;
 }
 
-.panel.active {
+.details.active {
     display: block;
 }

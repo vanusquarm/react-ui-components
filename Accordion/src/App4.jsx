@@ -18,8 +18,8 @@ function Accordion({sections}) {
           
         return (
           <div key={i}>
-            <button className="accordion" onClick={(e) => showDetails(e)}>{section.summary}</button>
-            <div className="panel"> <p>{section.detail}</p> </div>
+            <button className="summary" onClick={(e) => showDetails(e)}>{section.summary}</button>
+            <div className="details"> <p>{section.detail}</p> </div>
           </div>
         );
       })}

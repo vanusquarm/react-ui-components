@@ -27,7 +27,7 @@ export default function Tabs(props) {
         }
       </div>
       
-      <div className="tab-panel">
+      <div className="tab-details">
         
         {<div>
             <h3>{tab.name}</h3>
