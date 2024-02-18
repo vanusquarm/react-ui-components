@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 /**
  * Created by sylvan quarm on 6/26/2023.
- * https://github.com/vanusquarm/react-ui-components
+ * https://github.com/vanusquarm/react-ui-components/Tabs/src/Tabs2.jsx
  */
 export default function Tabs(props) { // Refactor name to Tab and Tab to TabsHeader
 
-  const [selectedTab, setSelectedTab] = useState(1);
+  const [selectedTab, setSelectedTab] = useState(null);
   
 
   const tabList = [
@@ -18,9 +18,9 @@ export default function Tabs(props) { // Refactor name to Tab and Tab to TabsHea
  
     <div className='container'>
       <div className="tab">
-        {tabList.map((tab, i) => {
+        {tabList.map((tab, index) => {
 
-          return <div key={i} onClick={() => setSelectedTab(tab.id)} className={(tab.id === selectedTab) ? "active":""}>{tab.name}</div>
+          return <div key={index} onClick={() => setSelectedTab(index)} className={(index === selectedTab) ? "active":""}>{tab.name}</div>
         })
         }
       </div>
@@ -28,8 +28,8 @@ export default function Tabs(props) { // Refactor name to Tab and Tab to TabsHea
       <div className="tab-panel">
         
         {<div>
-            <h3>{tabList[selectedTab - 1].name}</h3>
-            <p>{tabList[selectedTab - 1].details}</p>
+            <h3>{tabList[selectedTab]?.name}</h3>
+            <p>{tabList[selectedTab]?.details}</p>
         </div>}
       </div>      
       
